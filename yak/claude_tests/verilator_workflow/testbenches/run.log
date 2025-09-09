@@ -1,0 +1,60 @@
+INFO:  [0][__ts]: Registering Unit Test Case alu_ut
+INFO:  [0][testrunner]: Registering Test Suite __ts
+INFO:  [0][__ts]: RUNNING
+INFO:  [0][alu_ut]: RUNNING
+INFO:  [0][alu_ut]: test_add_basic::RUNNING
+DEBUG SETUP: a=00000000, b=00000000, op=0, result=00000000
+DEBUG: test_add_basic - a=00000010, b=00000020, op=0, result=00000000, expected=00000030
+ERROR: [2][alu_ut]: fail_unless_equal: (result) !== (32'h30) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:113)
+INFO:  [2][alu_ut]: test_add_basic::FAILED
+INFO:  [2][alu_ut]: test_add_overflow::RUNNING
+DEBUG SETUP: a=00000000, b=00000000, op=0, result=00000000
+ERROR: [4][alu_ut]: fail_unless_equal: (result) !== (32'h80000000) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:124)
+INFO:  [4][alu_ut]: test_add_overflow::FAILED
+INFO:  [4][alu_ut]: test_add_carry::RUNNING
+DEBUG SETUP: a=00000000, b=00000000, op=0, result=00000000
+ERROR: [6][alu_ut]: fail_unless_equal: (carry_out) !== (1'b1) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:138)
+INFO:  [6][alu_ut]: test_add_carry::FAILED
+INFO:  [6][alu_ut]: test_sub_basic::RUNNING
+DEBUG SETUP: a=00000000, b=00000000, op=0, result=00000000
+ERROR: [8][alu_ut]: fail_unless_equal: (result) !== (32'h20) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:147)
+INFO:  [8][alu_ut]: test_sub_basic::FAILED
+INFO:  [8][alu_ut]: test_sub_zero::RUNNING
+DEBUG SETUP: a=00000000, b=00000000, op=0, result=00000000
+INFO:  [10][alu_ut]: test_sub_zero::PASSED
+INFO:  [10][alu_ut]: test_and::RUNNING
+DEBUG SETUP: a=00000000, b=00000000, op=0, result=00000000
+INFO:  [12][alu_ut]: test_and::PASSED
+INFO:  [12][alu_ut]: test_or::RUNNING
+DEBUG SETUP: a=00000000, b=00000000, op=0, result=00000000
+ERROR: [14][alu_ut]: fail_unless_equal: (result) !== (32'hFFFFFFFF) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:177)
+INFO:  [14][alu_ut]: test_or::FAILED
+INFO:  [14][alu_ut]: test_xor::RUNNING
+DEBUG SETUP: a=00000000, b=00000000, op=0, result=00000000
+INFO:  [16][alu_ut]: test_xor::PASSED
+INFO:  [16][alu_ut]: test_sll::RUNNING
+DEBUG SETUP: a=00000000, b=00000000, op=0, result=00000000
+DEBUG: test_sll - a=00000001, b=00000004, op=5, result=00000000, expected=00000010
+DEBUG: test_sll - b[4:0]=04, zero=1
+ERROR: [18][alu_ut]: fail_unless_equal: (result) !== (32'h00000010) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:198)
+INFO:  [18][alu_ut]: test_sll::FAILED
+INFO:  [18][alu_ut]: test_srl::RUNNING
+DEBUG SETUP: a=00000000, b=00000000, op=0, result=00000000
+ERROR: [20][alu_ut]: fail_unless_equal: (result) !== (32'h08000000) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:207)
+INFO:  [20][alu_ut]: test_srl::FAILED
+INFO:  [20][alu_ut]: test_slt_true::RUNNING
+DEBUG SETUP: a=00000000, b=00000000, op=0, result=00000000
+ERROR: [22][alu_ut]: fail_unless_equal: (result) !== (32'h00000001) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:217)
+INFO:  [22][alu_ut]: test_slt_true::FAILED
+INFO:  [22][alu_ut]: test_slt_false::RUNNING
+DEBUG SETUP: a=00000000, b=00000000, op=0, result=00000000
+INFO:  [24][alu_ut]: test_slt_false::PASSED
+INFO:  [24][alu_ut]: FAILED (4 of 12 tests passing)
+
+INFO:  [24][__ts]: FAILED (0 of 1 testcases passing)
+
+INFO:  [24][testrunner]: FAILED (0 of 1 suites passing) [SVUnit Unreleased]
+- /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/.testrunner.sv:38: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.038 2025-07-08
+- Verilator: $finish at 24ps; walltime 0.001 s; speed 20.117 ns/s
+- Verilator: cpu 0.001 s on 1 threads; alloced 0 MB

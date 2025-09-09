@@ -1,0 +1,197 @@
+# Verilated -*- Makefile -*-
+# DESCRIPTION: Verilator output: Make include file with class lists
+#
+# This file lists generated Verilated files, for including in higher level makefiles.
+# See Vtestrunner.mk for the caller.
+
+### Switches...
+# C11 constructs required?  0/1 (always on now)
+VM_C11 = 1
+# Timing enabled?  0/1
+VM_TIMING = 1
+# Coverage output mode?  0/1 (from --coverage)
+VM_COVERAGE = 0
+# Parallel builds?  0/1 (from --output-split)
+VM_PARALLEL_BUILDS = 1
+# Tracing output mode?  0/1 (from --trace-fst/--trace-saif/--trace-vcd)
+VM_TRACE = 1
+# Tracing output mode in FST format?  0/1 (from --trace-fst)
+VM_TRACE_FST = 0
+# Tracing output mode in SAIF format?  0/1 (from --trace-saif)
+VM_TRACE_SAIF = 0
+# Tracing output mode in VCD format?  0/1 (from --trace-vcd)
+VM_TRACE_VCD = 1
+
+### Object file lists...
+# Generated module classes, fast-path, compile with highest optimization
+VM_CLASSES_FAST += \
+  Vtestrunner \
+  Vtestrunner___024root__DepSet_ha959acb5__0 \
+  Vtestrunner___024root__DepSet_h7adf2e6e__0 \
+  Vtestrunner___024root__DepSet_h9e63d62a__0 \
+  Vtestrunner_junit_xml__03a__03aXmlElement__Vclpkg__DepSet_h38a854ca__0 \
+  Vtestrunner_junit_xml__03a__03aXmlElement__Vclpkg__DepSet_h0db59e1d__0 \
+  Vtestrunner_junit_xml__03a__03aTestCase__Vclpkg__DepSet_h1dcfc517__0 \
+  Vtestrunner_junit_xml__03a__03aTestCase__Vclpkg__DepSet_h94d51035__0 \
+  Vtestrunner_junit_xml__03a__03aTestCase__Vclpkg__DepSet_h2ad22cc8__0 \
+  Vtestrunner_junit_xml__03a__03aTestSuite__Vclpkg__DepSet_he1f736b1__0 \
+  Vtestrunner_junit_xml__03a__03aTestSuite__Vclpkg__DepSet_hae4aac37__0 \
+  Vtestrunner_junit_xml__03a__03aTestSuite__Vclpkg__DepSet_h9756d5a8__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_add_basic__Vclpkg__DepSet_h2f2b6f3c__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_add_basic__Vclpkg__DepSet_h82ed24c5__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_add_basic__Vclpkg__DepSet_h183692b3__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_add_overflow__Vclpkg__DepSet_he946ff00__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_add_overflow__Vclpkg__DepSet_h8a77dfea__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_add_overflow__Vclpkg__DepSet_h5e5b02d7__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_add_carry__Vclpkg__DepSet_h6d686b85__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_add_carry__Vclpkg__DepSet_h21fcf6ce__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_add_carry__Vclpkg__DepSet_hda758f5a__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_sub_basic__Vclpkg__DepSet_h183446ec__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_sub_basic__Vclpkg__DepSet_hf20a2b09__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_sub_basic__Vclpkg__DepSet_h2d49ac03__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_sub_zero__Vclpkg__DepSet_h1b1a8f31__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_sub_zero__Vclpkg__DepSet_hbf909e07__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_sub_zero__Vclpkg__DepSet_h2c26f2a6__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_and__Vclpkg__DepSet_h2bac5c92__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_and__Vclpkg__DepSet_he68d805c__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_and__Vclpkg__DepSet_h1cb1a645__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_or__Vclpkg__DepSet_h2cf5ef87__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_or__Vclpkg__DepSet_h332d114c__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_or__Vclpkg__DepSet_h1a081358__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_xor__Vclpkg__DepSet_hb5e4d523__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_xor__Vclpkg__DepSet_hc82aca11__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_xor__Vclpkg__DepSet_h82f91cb4__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_sll__Vclpkg__DepSet_h7fe5b9e0__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_sll__Vclpkg__DepSet_h8f623e42__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_sll__Vclpkg__DepSet_hc8f7c0f7__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_srl__Vclpkg__DepSet_hdb994312__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_srl__Vclpkg__DepSet_h2fcff57c__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_srl__Vclpkg__DepSet_h6ca4a6c5__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_slt_true__Vclpkg__DepSet_h30febd79__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_slt_true__Vclpkg__DepSet_h13f013b1__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_slt_true__Vclpkg__DepSet_h0602c46e__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_slt_false__Vclpkg__DepSet_h7ed08522__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_slt_false__Vclpkg__DepSet_hd4258fd0__0 \
+  Vtestrunner_alu_unit_test__03a__03atest_slt_false__Vclpkg__DepSet_hc7ececb5__0 \
+  Vtestrunner_svunit_pkg__03a__03astring_utils__Vclpkg__DepSet_h238ff74c__0 \
+  Vtestrunner_svunit_pkg__03a__03astring_utils__Vclpkg__DepSet_h1491faa3__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_base__Vclpkg__DepSet_hc62fa75a__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_base__Vclpkg__DepSet_h6f31ca8d__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_test__Vclpkg__DepSet_h299665fa__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_test__Vclpkg__DepSet_h1eab8ced__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testcase__Vclpkg__DepSet_h1c7e370e__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testcase__Vclpkg__DepSet_h05d98299__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testcase__Vclpkg__DepSet_h6e88dcd2__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testcase__Vclpkg__DepSet_h6e0259b5__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testcase__Vclpkg__DepSet_h0590c2b0__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testcase__Vclpkg__DepSet_hcbd410cd__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testcase__Vclpkg__DepSet_h01abfadc__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testcase__Vclpkg__DepSet_hd06f7d80__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testcase__Vclpkg__DepSet_h97063348__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testcase__Vclpkg__DepSet_hd71fa12a__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testsuite__Vclpkg__DepSet_h3ffe38d6__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testsuite__Vclpkg__DepSet_h5fec56a3__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testsuite__Vclpkg__DepSet_he883a614__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testsuite__Vclpkg__DepSet_hbe01789a__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testsuite__Vclpkg__DepSet_h31be6fd4__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testsuite__Vclpkg__DepSet_he8f19c34__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testrunner__Vclpkg__DepSet_h3dfae1e1__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testrunner__Vclpkg__DepSet_h5c58cfcd__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testrunner__Vclpkg__DepSet_hbe958388__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testrunner__Vclpkg__DepSet_h03625c9e__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testrunner__Vclpkg__DepSet_he9653322__0 \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testrunner__Vclpkg__DepSet_h95f2825e__0 \
+  Vtestrunner_svunit_pkg__03a__03afilter_for_single_pattern__Vclpkg__DepSet_h5f073286__0 \
+  Vtestrunner_svunit_pkg__03a__03afilter_for_single_pattern__Vclpkg__DepSet_he81a3859__0 \
+  Vtestrunner_svunit_pkg__03a__03afilter_for_single_pattern__Vclpkg__DepSet_hffae7dd9__0 \
+  Vtestrunner_svunit_pkg__03a__03afilter__Vclpkg__DepSet_hba93608b__0 \
+  Vtestrunner_svunit_pkg__03a__03afilter__Vclpkg__DepSet_h010453b0__0 \
+  Vtestrunner_svunit_pkg__03a__03afilter__Vclpkg__DepSet_h8bae8a5c__0 \
+  Vtestrunner_svunit_pkg__03a__03afilter__Vclpkg__DepSet_h7d06fbac__0 \
+  Vtestrunner_svunit_pkg__03a__03a__VDynScope_12__Vclpkg__DepSet_h13228b51__0 \
+  Vtestrunner_svunit_pkg__03a__03a__VDynScope_12__Vclpkg__DepSet_h243eee86__0 \
+  Vtestrunner__main \
+
+# Generated module classes, non-fast-path, compile with low/medium optimization
+VM_CLASSES_SLOW += \
+  Vtestrunner___024root__Slow \
+  Vtestrunner___024root__DepSet_ha959acb5__0__Slow \
+  Vtestrunner___024root__DepSet_h9e63d62a__0__Slow \
+  Vtestrunner_junit_xml__Slow \
+  Vtestrunner_junit_xml__DepSet_hfa0b5bbf__0__Slow \
+  Vtestrunner_alu_unit_test__Slow \
+  Vtestrunner_alu_unit_test__DepSet_h396d5503__0__Slow \
+  Vtestrunner_alu_unit_test__DepSet_h4ae33bd3__0__Slow \
+  Vtestrunner_svunit_pkg__Slow \
+  Vtestrunner_svunit_pkg__DepSet_h6b407389__0__Slow \
+  Vtestrunner_svunit_pkg__DepSet_hdc5d775e__0__Slow \
+  Vtestrunner_junit_xml__03a__03aXmlElement__Vclpkg__Slow \
+  Vtestrunner_junit_xml__03a__03aXmlElement__Vclpkg__DepSet_h0db59e1d__0__Slow \
+  Vtestrunner_junit_xml__03a__03aTestCase__Vclpkg__Slow \
+  Vtestrunner_junit_xml__03a__03aTestCase__Vclpkg__DepSet_h2ad22cc8__0__Slow \
+  Vtestrunner_junit_xml__03a__03aTestSuite__Vclpkg__Slow \
+  Vtestrunner_junit_xml__03a__03aTestSuite__Vclpkg__DepSet_h9756d5a8__0__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_add_basic__Vclpkg__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_add_basic__Vclpkg__DepSet_h183692b3__0__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_add_overflow__Vclpkg__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_add_overflow__Vclpkg__DepSet_h5e5b02d7__0__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_add_carry__Vclpkg__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_add_carry__Vclpkg__DepSet_hda758f5a__0__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_sub_basic__Vclpkg__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_sub_basic__Vclpkg__DepSet_h2d49ac03__0__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_sub_zero__Vclpkg__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_sub_zero__Vclpkg__DepSet_h2c26f2a6__0__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_and__Vclpkg__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_and__Vclpkg__DepSet_h1cb1a645__0__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_or__Vclpkg__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_or__Vclpkg__DepSet_h1a081358__0__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_xor__Vclpkg__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_xor__Vclpkg__DepSet_h82f91cb4__0__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_sll__Vclpkg__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_sll__Vclpkg__DepSet_hc8f7c0f7__0__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_srl__Vclpkg__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_srl__Vclpkg__DepSet_h6ca4a6c5__0__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_slt_true__Vclpkg__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_slt_true__Vclpkg__DepSet_h0602c46e__0__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_slt_false__Vclpkg__Slow \
+  Vtestrunner_alu_unit_test__03a__03atest_slt_false__Vclpkg__DepSet_hc7ececb5__0__Slow \
+  Vtestrunner_svunit_pkg__03a__03astring_utils__Vclpkg__Slow \
+  Vtestrunner_svunit_pkg__03a__03astring_utils__Vclpkg__DepSet_h1491faa3__0__Slow \
+  Vtestrunner_svunit_pkg__03a__03asvunit_base__Vclpkg__Slow \
+  Vtestrunner_svunit_pkg__03a__03asvunit_base__Vclpkg__DepSet_h6f31ca8d__0__Slow \
+  Vtestrunner_svunit_pkg__03a__03asvunit_test__Vclpkg__Slow \
+  Vtestrunner_svunit_pkg__03a__03asvunit_test__Vclpkg__DepSet_h1eab8ced__0__Slow \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testcase__Vclpkg__Slow \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testcase__Vclpkg__DepSet_hd71fa12a__0__Slow \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testsuite__Vclpkg__Slow \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testsuite__Vclpkg__DepSet_he8f19c34__0__Slow \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testrunner__Vclpkg__Slow \
+  Vtestrunner_svunit_pkg__03a__03asvunit_testrunner__Vclpkg__DepSet_he9653322__0__Slow \
+  Vtestrunner_svunit_pkg__03a__03afilter_for_single_pattern__Vclpkg__Slow \
+  Vtestrunner_svunit_pkg__03a__03afilter_for_single_pattern__Vclpkg__DepSet_he81a3859__0__Slow \
+  Vtestrunner_svunit_pkg__03a__03afilter__Vclpkg__Slow \
+  Vtestrunner_svunit_pkg__03a__03afilter__Vclpkg__DepSet_h8bae8a5c__0__Slow \
+  Vtestrunner_svunit_pkg__03a__03a__VDynScope_12__Vclpkg__Slow \
+  Vtestrunner_svunit_pkg__03a__03a__VDynScope_12__Vclpkg__DepSet_h243eee86__0__Slow \
+
+# Generated support classes, fast-path, compile with highest optimization
+VM_SUPPORT_FAST += \
+  Vtestrunner__Trace__0 \
+
+# Generated support classes, non-fast-path, compile with low/medium optimization
+VM_SUPPORT_SLOW += \
+  Vtestrunner__Syms \
+  Vtestrunner__Trace__0__Slow \
+  Vtestrunner__TraceDecls__0__Slow \
+
+# Global classes, need linked once per executable, fast-path, compile with highest optimization
+VM_GLOBAL_FAST += \
+  verilated \
+  verilated_vcd_c \
+  verilated_timing \
+  verilated_threads \
+
+# Global classes, need linked once per executable, non-fast-path, compile with low/medium optimization
+VM_GLOBAL_SLOW += \
+
+# Verilated -*- Makefile -*-

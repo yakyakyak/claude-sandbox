@@ -1,0 +1,44 @@
+<testsuites>
+  <testsuite name="__ts">
+    <testcase classname="alu_ut" name="test_add_basic">
+      <failure message="fail_unless_equal: (result) !== (32'h30) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:113)" type="failure">
+      </failure>
+    </testcase>
+    <testcase classname="alu_ut" name="test_add_overflow">
+      <failure message="fail_unless_equal: (result) !== (32'h80000000) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:124)" type="failure">
+      </failure>
+    </testcase>
+    <testcase classname="alu_ut" name="test_add_carry">
+      <failure message="fail_unless_equal: (carry_out) !== (1'b1) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:138)" type="failure">
+      </failure>
+    </testcase>
+    <testcase classname="alu_ut" name="test_sub_basic">
+      <failure message="fail_unless_equal: (result) !== (32'h20) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:147)" type="failure">
+      </failure>
+    </testcase>
+    <testcase classname="alu_ut" name="test_sub_zero">
+    </testcase>
+    <testcase classname="alu_ut" name="test_and">
+    </testcase>
+    <testcase classname="alu_ut" name="test_or">
+      <failure message="fail_unless_equal: (result) !== (32'hFFFFFFFF) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:177)" type="failure">
+      </failure>
+    </testcase>
+    <testcase classname="alu_ut" name="test_xor">
+    </testcase>
+    <testcase classname="alu_ut" name="test_sll">
+      <failure message="fail_unless_equal: (result) !== (32'h00000010) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:198)" type="failure">
+      </failure>
+    </testcase>
+    <testcase classname="alu_ut" name="test_srl">
+      <failure message="fail_unless_equal: (result) !== (32'h08000000) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:207)" type="failure">
+      </failure>
+    </testcase>
+    <testcase classname="alu_ut" name="test_slt_true">
+      <failure message="fail_unless_equal: (result) !== (32'h00000001) (at /Users/yak/Projects/Claude/claude_hardware_projects/claude-sandbox/yak/verilator_workflow/testbenches/./alu_unit_test.sv line:217)" type="failure">
+      </failure>
+    </testcase>
+    <testcase classname="alu_ut" name="test_slt_false">
+    </testcase>
+  </testsuite>
+</testsuites>
