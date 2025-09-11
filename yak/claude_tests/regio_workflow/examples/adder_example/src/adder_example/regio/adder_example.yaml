@@ -1,0 +1,27 @@
+name: adder_example
+info: |
+  Simple adder example with enable control for demonstration of regio workflow.
+
+regs:
+  - default:
+      width  : 32
+      access : rw
+      init   : 0
+
+  - name: enable
+    desc: Enable adder operation
+    width: 1
+    access: rw
+
+  - name: operand_a
+    desc: First operand for addition (32-bit)
+    init: 0
+
+  - name: operand_b  
+    desc: Second operand for addition (32-bit)
+    init: 0
+
+  - name: result
+    desc: Addition result (32-bit)
+    access: ro
+    init: 0
