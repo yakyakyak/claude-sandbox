@@ -22,7 +22,8 @@ SRC_LIST_FILES =
 #   List subcomponent and external library dependencies
 #   (see $SCRIPTS_ROOT/Makefiles/templates/dependencies.mk)
 # ----------------------------------------------------
-SUBCOMPONENTS =
+SUBCOMPONENTS = \
+    fifo.rtl@common
 EXT_LIBS =
 
 # ----------------------------------------------------
