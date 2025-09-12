@@ -49,8 +49,6 @@ override PLUSARGS +=
 # ----------------------------------------------------
 # Options
 # ----------------------------------------------------
-COMPILE_OPTS =
-ELAB_OPTS = --debug typical
 SIM_OPTS =
 
 # ----------------------------------------------------
@@ -73,4 +71,4 @@ include $(SCRIPTS_ROOT)/Makefiles/svunit.mk
 # ----------------------------------------------------
 # Import Vivado sim targets
 # ----------------------------------------------------
-include $(SCRIPTS_ROOT)/Makefiles/vivado_sim.mk
+include $(SCRIPTS_ROOT)/Makefiles/verilator.mk
