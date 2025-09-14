@@ -1,3 +1,6 @@
 [submodule "yak/verilator_workflow/svunit"]
 	path = yak/verilator_workflow/svunit
 	url = https://github.com/tudortimi/svunit.git
+[submodule "design_repo/esnet-fpga-library"]
+	path = design_repo/esnet-fpga-library
+	url = https://github.com/esnet/esnet-fpga-library.git
