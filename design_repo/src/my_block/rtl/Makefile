@@ -23,7 +23,8 @@ SRC_LIST_FILES =
 #   (see $SCRIPTS_ROOT/Makefiles/templates/dependencies.mk)
 # ----------------------------------------------------
 SUBCOMPONENTS = \
-    fifo.rtl@common
+    util.rtl@common
+
 EXT_LIBS =
 
 # ----------------------------------------------------
