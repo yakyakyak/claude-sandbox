@@ -23,7 +23,8 @@ SRC_LIST_FILES =
 #   (see $SCRIPTS_ROOT/Makefiles/templates/dependencies.mk)
 # ----------------------------------------------------
 SUBCOMPONENTS = \
-    fifo.rtl@common
+    util.rtl@common
+
 EXT_LIBS =
 
 # ----------------------------------------------------
@@ -42,6 +43,7 @@ COMPILE_OPTS =
 # ----------------------------------------------------
 all: compile synth
 
+pre:     _compile_pre
 compile: _compile_sim
 synth:   _compile_synth
 info:    _compile_info
